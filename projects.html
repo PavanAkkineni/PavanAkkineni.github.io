@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Pavan Akkineni</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">Pavan Akkineni's Profile</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="assets/resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Projects</h1>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <section class="content-section">
+                <!-- MatchPlayer Project -->
+                <div class="content-card">
+                    <h3>MatchPlayer - AI-Powered Soccer Commentary System</h3>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 1rem;">
+                            <strong>Overview:</strong> Masterminded a cutting-edge AI system that revolutionizes soccer commentary by automatically identifying players in real-time video streams.
+                        </p>
+                        
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Key Features & Achievements:</h4>
+                        <ul>
+                            <li>Developed a YOLO-based face-detection pipeline integrated with FaceNet-embedding technology</li>
+                            <li>Achieved remarkable player identification accuracy: <strong>52% Top-2</strong> and <strong>60% Top-3</strong></li>
+                            <li>Outperformed baseline by <strong>15×</strong> (baseline random accuracy: 4%)</li>
+                            <li>Real-time processing capability for live soccer match streams</li>
+                            <li>Automated commentary generation based on player identification</li>
+                        </ul>
+
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem; margin-top: 1rem;">Technical Implementation:</h4>
+                        <ul>
+                            <li>Utilized YOLOv5 for robust face detection in challenging sports environments</li>
+                            <li>Implemented FaceNet for generating high-quality face embeddings</li>
+                            <li>Created custom dataset with soccer player images for training</li>
+                            <li>Optimized inference pipeline for real-time performance</li>
+                            <li>Integrated with video streaming APIs for live match analysis</li>
+                        </ul>
+
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">YOLOv5</span>
+                            <span class="tech-tag">FaceNet</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">Real-time Processing</span>
+                        </div>
+
+                        <div style="margin-top: 1rem;">
+                            <a href="https://github.com/PavanAkkineni/MatchPlayer" target="_blank" style="color: var(--secondary-color); text-decoration: none;">
+                                <i class="fab fa-github"></i> View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prism LLM Project -->
+                <div class="content-card">
+                    <h3>Prism LLM - Intelligent Query Router</h3>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 1rem;">
+                            <strong>Overview:</strong> Expertly architected an agentic planner web application that intelligently routes user queries to the most suitable Large Language Model, optimizing for answer relevance and cost efficiency.
+                        </p>
+                        
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Key Features & Achievements:</h4>
+                        <ul>
+                            <li>Intelligent query classification system that analyzes user intent</li>
+                            <li>Dynamic routing to optimal LLM (DeepSeek, Mistral, Qwen, Gemma)</li>
+                            <li>Significantly boosted answer relevance through smart model selection</li>
+                            <li>Implemented rate-limiting and retry/backoff mechanisms for reliability</li>
+                            <li>Cost optimization by selecting appropriate models based on query complexity</li>
+                        </ul>
+
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem; margin-top: 1rem;">Technical Implementation:</h4>
+                        <ul>
+                            <li>Built RESTful API using FastAPI for high-performance request handling</li>
+                            <li>Implemented query embedding and similarity matching for classification</li>
+                            <li>Integrated multiple LLM APIs with unified interface</li>
+                            <li>Created intelligent caching system to reduce API calls</li>
+                            <li>Developed comprehensive monitoring and logging system</li>
+                            <li>Implemented load balancing across multiple model endpoints</li>
+                        </ul>
+
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">FastAPI</span>
+                            <span class="tech-tag">LangChain</span>
+                            <span class="tech-tag">DeepSeek</span>
+                            <span class="tech-tag">Mistral</span>
+                            <span class="tech-tag">Qwen</span>
+                            <span class="tech-tag">Gemma</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Rate Limiting</span>
+                        </div>
+
+                        <div style="margin-top: 1rem;">
+                            <a href="https://github.com/chidaksh/PrismLLM" target="_blank" style="color: var(--secondary-color); text-decoration: none;">
+                                <i class="fab fa-github"></i> View on GitHub →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Projects Section -->
+                <div class="content-card">
+                    <h3>Enterprise Data Platform Migration</h3>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 1rem;">
+                            <strong>At Bajaj Finance Limited:</strong> Led the complete replatforming of production data infrastructure to Databricks
+                        </p>
+                        <ul>
+                            <li>Migrated 24+ production data sources to modern Lakehouse architecture</li>
+                            <li>Reduced batch processing time by 30% through optimization</li>
+                            <li>Implemented comprehensive data quality controls, eliminating 35% of unnecessary processing</li>
+                            <li>Designed modular ETL pipelines with schema enforcement and audit logging</li>
+                            <li>Achieved $80K annual vendor cost savings</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Databricks</span>
+                            <span class="tech-tag">Apache Spark</span>
+                            <span class="tech-tag">Delta Lake</span>
+                            <span class="tech-tag">Unity Catalog</span>
+                            <span class="tech-tag">Azure</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>Data Privacy & Compliance Platform</h3>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 1rem;">
+                            <strong>At Bajaj Finance Limited:</strong> Engineered enterprise-wide data privacy controls for regulatory compliance
+                        </p>
+                        <ul>
+                            <li>Implemented data privacy controls for 11+ databases</li>
+                            <li>Achieved DPDP Act compliance with RBAC and PII masking</li>
+                            <li>Built high-availability Django platform with zero-downtime releases</li>
+                            <li>Achieved 3.6× faster scan cycles through optimization</li>
+                            <li>Integrated Prometheus/Grafana for comprehensive observability</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Django</span>
+                            <span class="tech-tag">Securiti.ai</span>
+                            <span class="tech-tag">Prometheus</span>
+                            <span class="tech-tag">Grafana</span>
+                            <span class="tech-tag">Celery</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-card">
+                    <h3>RNA Therapeutic Prediction Model</h3>
+                    <div style="margin-top: 1rem;">
+                        <p style="margin-bottom: 1rem;">
+                            <strong>At UNC School of Medicine:</strong> Developed AI models for RNA-based drug discovery
+                        </p>
+                        <ul>
+                            <li>Created predictive model for RNA Minimum Free Energy (MFE)</li>
+                            <li>Leveraged Rinalmo (RNA Language Model) with K-mer position embeddings</li>
+                            <li>Generated antisense RNA therapeutic candidates for HIV TAR1</li>
+                            <li>Implemented Evolutionary Algorithm for candidate optimization</li>
+                            <li>Collaborated with medical researchers on critical healthcare challenges</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">RNA Modeling</span>
+                            <span class="tech-tag">Bioinformatics</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Evolutionary Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub Portfolio -->
+                <div class="content-card">
+                    <h3>📁 More Projects</h3>
+                    <p>Explore more of my projects and contributions on GitHub:</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/PavanAkkineni" target="_blank" class="social-link" style="display: inline-flex;">
+                            <i class="fab fa-github"></i> GitHub Profile
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>pavanchowdary.akkineni@gmail.com | +1 (602) 756-7565 | Chapel Hill, NC</p>
+            <p>Last updated: September 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

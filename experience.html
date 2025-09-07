@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Pavan Akkineni</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="index.html">Pavan Akkineni's Profile</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="education.html" class="nav-link">Education</a></li>
+                <li><a href="experience.html" class="nav-link active">Experience</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="assets/resume.pdf" class="nav-link" target="_blank">Resume</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- <div class="page-header">
+            <div class="container">
+                <h1 class="page-title">Professional Experience</h1>
+            </div>
+        </div> -->
+
+        <div class="container">
+            <section class="content-section">
+                <!-- Current Position -->
+                <div class="content-card">
+                    <h3>Graduate Teaching Assistant</h3>
+                    <h4>UNC School of Data Science and Society</h4>
+                    <p class="date">January 2025 – Present | Chapel Hill, NC, USA</p>
+                    <ul>
+                        <li>Mentoring students in statistics, machine learning, and neural networks through personalized guidance and support</li>
+                        <li>Designing and leading hands-on workshops on clinical datasets to provide practical experience</li>
+                        <li>Guiding student teams to build comprehensive ML pipelines including data ingestion, feature engineering, model selection, and evaluation</li>
+                        <li>Developing educational materials and assessments to enhance student learning outcomes</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Machine Learning</span>
+                        <span class="tech-tag">Neural Networks</span>
+                        <span class="tech-tag">Statistics</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Teaching</span>
+                    </div>
+                </div>
+
+                <!-- Summer Internship -->
+                <div class="content-card">
+                    <h3>Summer AI Engineering Intern</h3>
+                    <h4>UNC School of Medicine</h4>
+                    <p class="date">June 2025 - August 2025 | Chapel Hill, NC, USA</p>
+                    <ul>
+                        <li>Engineered a predictive model for RNA MFE (Minimum Free Energy) leveraging Rinalmo (RNA Language Model) context and K-mer position embeddings</li>
+                        <li>Skillfully created antisense RNA-based therapeutic candidates for HIV TAR1 through Evolutionary Algorithm optimization</li>
+                        <li>Collaborated with medical researchers to apply AI techniques to critical healthcare challenges</li>
+                        <li>Implemented advanced deep learning models for RNA structure prediction and drug discovery</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">RNA Modeling</span>
+                        <span class="tech-tag">Deep Learning</span>
+                        <span class="tech-tag">Evolutionary Algorithms</span>
+                        <span class="tech-tag">Bioinformatics</span>
+                        <span class="tech-tag">PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Senior Software Engineer -->
+                <div class="content-card">
+                    <h3>Senior Software Engineer</h3>
+                    <h4>Bajaj Finance Limited</h4>
+                    <p class="date">September 2023 – August 2024 | Pune, India</p>
+                    <ul>
+                        <li>Strategically steered data-privacy controls for 11+ databases, leveraging Securiti.ai, Databricks, and EDW(ASA) to achieve compliance with DPDP Act with RBAC/least-privilege IAM, PII masking, KMS-backed encryption</li>
+                        <li>Engineered a high-availability Django platform (Securiti.ai–style) with async I/O, DB read-replicas, Celery queues, and Prometheus/Grafana observability—achieving zero-downtime releases and 3.6× faster scan cycles</li>
+                        <li>Pioneered a data catalog/lineage service with REST/GraphQL contracts, RESTful microservices, schema versioning, and audit logging, enabling real-time metadata flow and idempotent writes securing $80K/yr vendor savings</li>
+                        <li>Automated an OCR-driven KYC ingestion pipeline using OpenCV, Tesseract with queue-backed workers, idempotent retries/backoff, PII redaction and structured logging; Grafana SLIs with alerts, enabling 60% hands-free onboarding</li>
+                        <li>Revamped legacy ingestion scripts to Databricks Lakehouse with modular ETL, schema enforcement Delta, Unity Catalog ACLs and lineage-aware audit logs, plus AQE/shuffle tuning across 24 production sources</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Databricks</span>
+                        <span class="tech-tag">Django</span>
+                        <span class="tech-tag">Securiti.ai</span>
+                        <span class="tech-tag">OCR</span>
+                        <span class="tech-tag">GraphQL</span>
+                        <span class="tech-tag">Prometheus</span>
+                        <span class="tech-tag">Grafana</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineer -->
+                <div class="content-card">
+                    <h3>Data Engineer</h3>
+                    <h4>Bajaj Finance Limited</h4>
+                    <p class="date">July 2022 – August 2023 | Pune, India</p>
+                    <ul>
+                        <li>Replatformed the entire production environment and scripts onto Databricks, reducing batch-upload time by 30%</li>
+                        <li>Instituted expert-grade data-quality controls across OfferMart pipelines, eliminating 35% of unnecessary processing</li>
+                        <li>Overhauled scalable Spark ETL pipelines using Spark and Airflow with lazy-loading, checkpointing and dynamic compute provision, cutting batch p95 by 25% while orchestrating concurrent tasks for peak resource utilization</li>
+                        <li>Led campaign offer generation with DAG-based policy workflows, queue-backed optimization and monitoring campaign dissonance through cron jobs with SLA-backed anomaly alerts and apply canary patches/rollback playbooks</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Apache Spark</span>
+                        <span class="tech-tag">Airflow</span>
+                        <span class="tech-tag">ETL</span>
+                        <span class="tech-tag">Databricks</span>
+                        <span class="tech-tag">Delta Lake</span>
+                    </div>
+                </div>
+
+                <!-- Data Engineer Intern -->
+                <div class="content-card">
+                    <h3>Data Engineer Intern</h3>
+                    <h4>Bajaj Finance Limited</h4>
+                    <p class="date">January 2022 – June 2022 | Pune, India</p>
+                    <ul>
+                        <li>Contributed to Delta Lake data purging through VACUUM, retention policies, and daily reports to save storage by 30%</li>
+                        <li>Facilitated partitions and z-order indexing strategies for Hive & Delta Lake tables, boosting p90 query latency by 25%</li>
+                        <li>Developed automated data quality monitoring scripts to identify and resolve data inconsistencies</li>
+                        <li>Assisted in migration of legacy ETL jobs to modern cloud-based architecture</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Delta Lake</span>
+                        <span class="tech-tag">Hive</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Data Optimization</span>
+                    </div>
+                </div>
+
+                <!-- Awards Section -->
+                <div class="content-card">
+                    <h3>Professional Recognition</h3>
+                    <div style="margin-top: 1.5rem;">
+                        <h4 style="color: var(--secondary-color);">🏆 Bajaj Finserv Kudos Award</h4>
+                        <p style="margin-top: 0.5rem;">Recognized for owning and leading the enterprise-wide high-stakes production replatforming to Databricks, demonstrating exceptional technical leadership and project management skills.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>pavanchowdary.akkineni@gmail.com | +1 (602) 756-7565 | Chapel Hill, NC</p>
+            <p>Last updated: September 2025</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
